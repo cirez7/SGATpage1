@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Administrador - Sistema de Turnos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', 'Inter', sans-serif; }
+    .btn {
+      @apply bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transition;
+    }
+    .titulo {
+      @apply text-3xl font-bold text-blue-800 underline decoration-blue-400 mb-6;
+    }
+    .panel {
+      @apply bg-white/90 p-4 rounded-xl shadow-md border-l-4 border-blue-500 font-semibold;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+
+  <!-- PANEL ADMINISTRADOR -->
+  <section id="admin" class="h-screen flex flex-col items-center p-8">
+    <h2 class="titulo">Administrador del Sistema</h2>
+    <button class="btn">Crear usuario</button>
+    <button class="btn">Asignar roles</button>
+    <button class="btn">Resetear contraseña</button>
+    <button onclick="window.location.href='index.html'" class="btn mt-6">Volver</button>
+  </section>
+
+</body>
+</html>
